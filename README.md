@@ -11,7 +11,7 @@ From downloaded archives untar all to */opt/Abaqus*, and merge all duplicates.
 
     sudo chmod -R 777 /opt/Abaqus/*
 
-Copy *libpng12.so.0* to all folders containing *DSYInsAppliGUI*:
+Copy *libpng12.so.0* to all folders containing *DSYInsAppliGUI*:.  
 */linux_a64/code/bin/
 
 ```bash
