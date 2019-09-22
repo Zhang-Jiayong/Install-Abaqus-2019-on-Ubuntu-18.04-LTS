@@ -45,7 +45,10 @@ Disable system checks:
 <!--
     export DSY_Skip_CheckPrereq=1 DSY_IgnoreError_CheckPrereq=1
 -->
+
+```bash
     export DSYAuthOS_`lsb_release -si`=1 DSY_Force_OS=linux_a64
+```
 
 Run GUI for the installation:
 
