@@ -9,7 +9,9 @@
 From downloaded archives untar all to */opt/Abaqus*, and merge all duplicates.  
 */opt/Abaqus* should have folders '1', '2' etc. inside.
 
+```bash
     sudo chmod -R 777 /opt/Abaqus/*
+```
 
 Copy *libpng12.so.0* to all folders containing *DSYInsAppliGUI*:.  
 */linux_a64/code/bin/
@@ -24,8 +26,10 @@ Copy *libpng12.so.0* to all folders containing *DSYInsAppliGUI*:.
 
 Install prerequisites:
 
+```bash
     sudo apt install ksh gcc g++ gfortran libstdc++5 build-essential make libjpeg62
     sudo apt install libmotif-dev libmotif-common rpm
+```
 
 Install license to */opt/SIMULIA/License*. Restart computer, license should start.  
 Or later configure network license server without restart.
