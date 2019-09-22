@@ -64,7 +64,7 @@ Connect Abaqus to online documentation and license:
 
     gedit /opt/DassaultSystemes/SimulationServices/V6R2019x/linux_a64/SMA/site/custom_v6.env
 
-```python
+```bash
     doc_root="http://help.3ds.com"
     license_server_type=FLEXNET
     abaquslm_license_file="27800@your_company_domain"
