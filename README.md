@@ -12,8 +12,15 @@ From downloaded archives untar all to */opt/Abaqus*, and merge all duplicates.
     sudo chmod -R 777 /opt/Abaqus/*
 
 Copy *libpng12.so.0* to all folders containing *DSYInsAppliGUI*:
+*/linux_a64/code/bin/
 
-    /linux_a64/code/bin/
+```bash
+    wget https://raw.githubusercontent.com/Zhang-Jiayong/Install-Abaqus-2019-on-Ubuntu-18.04-LTS/master/libpng12.so.0
+    for f in `find . -name DSYInsAppliGUI | grep linux_a64`; do
+        echo $f
+        cp -p libpng12.so.0 ${f%/*}/
+    done
+```
 
 Install prerequisites:
 
